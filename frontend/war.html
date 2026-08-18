@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">War — Unsung Heroes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="flame"></span><span>Unsung Heroes</span></a>
+    <div class="nav-links">
+      <a href="index.html">Wall of Honour</a>
+      <a href="wars.html" class="active">By War</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <p class="breadcrumb"><a href="wars.html">← All wars</a></p>
+    <p class="eyebrow" id="warYears"></p>
+    <h1 id="warName">Loading…</h1>
+    <p class="tagline" id="warDescription"></p>
+  </div>
+</header>
+
+<main class="container">
+  <p id="statusMsg" class="status-msg" hidden></p>
+  <section id="wall" class="wall" aria-label="Soldiers in this war"></section>
+  <p id="emptyState" class="empty-state" hidden>No profiles recorded for this war yet.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Information is compiled from official public sources including the Ministry of Defence's Gallantry Awards portal and the National War Memorial.</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/war.js"></script>
+</body>
+</html>

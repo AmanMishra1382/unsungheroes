@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse by War — Unsung Heroes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="flame"></span><span>Unsung Heroes</span></a>
+    <div class="nav-links">
+      <a href="index.html">Wall of Honour</a>
+      <a href="wars.html" class="active">By War</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">Chronicle</p>
+    <h1>Browse by war</h1>
+    <p class="tagline">Every conflict the Indian Army has fought since Independence, and the soldiers whose service is recorded within it.</p>
+  </div>
+</header>
+
+<main class="container">
+  <p id="statusMsg" class="status-msg" hidden></p>
+  <section id="warGrid" class="war-grid" aria-label="Wars"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Information is compiled from official public sources including the Ministry of Defence's Gallantry Awards portal and the National War Memorial.</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/wars.js"></script>
+</body>
+</html>

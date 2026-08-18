@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Profile — Unsung Heroes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="flame"></span><span>Unsung Heroes</span></a>
+    <div class="nav-links">
+      <a href="index.html">Wall of Honour</a>
+      <a href="wars.html">By War</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <p class="breadcrumb" style="margin-top: 32px;"><a href="index.html">← Wall of Honour</a></p>
+
+  <p id="statusMsg" class="status-msg" hidden></p>
+
+  <article id="detail" class="detail" hidden>
+    <h1 id="soldierName"></h1>
+    <p class="regiment-line" id="soldierRegiment"></p>
+
+    <div class="meta-row">
+      <div class="meta-item"><p class="label">Award</p><p class="value" id="soldierAward"></p></div>
+      <div class="meta-item"><p class="label">Status</p><p class="value" id="soldierStatus"></p></div>
+      <div class="meta-item"><p class="label">War / Operation</p><p class="value" id="soldierOperation"></p></div>
+      <div class="meta-item"><p class="label">Date of action</p><p class="value" id="soldierDate"></p></div>
+    </div>
+
+    <div class="full-story" id="soldierStory"></div>
+
+    <div class="sources-block">
+      <h3>Sources</h3>
+      <ul id="soldierSources"></ul>
+    </div>
+
+    <button class="report-btn" id="reportBtn">Report a correction</button>
+  </article>
+</main>
+
+<dialog id="correctionDialog">
+  <form id="correctionForm">
+    <h2>Report a correction</h2>
+    <label for="correctionMessage">What's incorrect or missing?</label>
+    <textarea id="correctionMessage" required minlength="5" rows="4"></textarea>
+    <label for="correctionName">Your name (optional)</label>
+    <input id="correctionName" type="text">
+    <div class="dialog-actions">
+      <button type="button" id="cancelCorrection">Cancel</button>
+      <button type="submit">Submit</button>
+    </div>
+    <p id="correctionResult" class="status-msg" hidden></p>
+  </form>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Information is compiled from official public sources including the Ministry of Defence's Gallantry Awards portal and the National War Memorial.</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/soldier.js"></script>
+</body>
+</html>

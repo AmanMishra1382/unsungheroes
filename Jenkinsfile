@@ -13,6 +13,7 @@ pipeline{
         }
         stage('Start Database'){
             steps{
+                sh 'docker compose down'
                 sh 'docker compose up -d db'
                 sh 'sleep 5'
             }

@@ -7,6 +7,7 @@ services:
       POSTGRES_PASSWORD: change-me
     volumes:
       - pgdata:/var/lib/postgresql/data
+      - ./backend/schema.sql:/schema.sql
 
 
   backend:

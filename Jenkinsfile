@@ -44,7 +44,7 @@ pipeline{
         }
     }
     post{
-        success{echo 'Deployed Successfully!'}
-        failed{echo 'Check the logs for errors!'}
+        success {echo 'Deployed Successfully!'}
+        failure {echo 'Check the logs for errors!'}
     }
 }

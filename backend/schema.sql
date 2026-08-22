@@ -102,7 +102,7 @@ SELECT
   (SELECT id FROM wars WHERE name = 'Kargil War'),
   (SELECT id FROM awards WHERE name = 'Param Vir Chakra'),
   'Battle of Point 4875, Operation Vijay', '1999-07-07',
-  'Led the recapture of Point 5140 and later Point 4875, continuing to lead his men in close combat even after being critically wounded.',
+  'He Led the recapture of Point 5140 and later Point 4875, continuing to lead his men in close combat even after being critically wounded.',
   'Captain Vikram Batra of 13 JAK Rifles first led a daring assault to recapture Point 5140 in June 1999, fighting the enemy in close combat during Operation Vijay.
 
 On 7 July 1999, his company was tasked with capturing a position on Point 4875. In fierce hand-to-hand fighting, he continued to lead his men forward despite sustaining serious wounds, before he was killed. His troops went on to capture the position. He is remembered by his call sign "Sher Shah" and his motto before the final assault, "Yeh Dil Maange More."'

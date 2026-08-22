@@ -40,7 +40,7 @@ pipeline{
         }
         stage('Cleanup'){
             steps{
-                sh 'docker compose prune -f'
+                sh 'docker image prune -f'
             }
         }
     }
